@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打游戏吗？</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffe6f2; /* 粉色背景 */
+            font-family: "Comic Sans MS", cursive, sans-serif; /* 可爱字体 */
+            color: #ff1493; /* 粉色文字 */
+            text-align: center;
+            animation: bgChange 5s infinite; /* 背景颜色渐变 */
+        }
+        h1 {
+            font-size: 48px;
+            animation: bounce 1.5s infinite, colorChange 3s infinite; /* 文字跳动 + 颜色变化 */
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        @keyframes colorChange {
+            0% { color: #ff1493; } /* 粉色 */
+            50% { color: #ff69b4; } /* 亮粉色 */
+            100% { color: #ff1493; } /* 粉色 */
+        }
+        @keyframes bgChange {
+            0% { background-color: #ffe6f2; } /* 浅粉色 */
+            50% { background-color: #ffccff; } /* 淡紫色 */
+            100% { background-color: #ffe6f2; } /* 浅粉色 */
+        }
+    </style>
+</head>
+<body>
+    <h1>要不要和我打游戏 小温宝宝💗</h1>
+</body>
+</html>
